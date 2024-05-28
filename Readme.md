@@ -2,6 +2,7 @@
 
 * Студент: [Анастасия Ганюшкина](https://up.htmlacademy.ru/htmlcss/40/user/2182947).
 * Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
+* Сайт: [Мой проект Седона](https://nkaise.github.io/2182947-sedona-40/).
 
 ---
 
