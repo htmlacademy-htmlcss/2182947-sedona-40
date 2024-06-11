@@ -37,6 +37,7 @@ body {
   color: #000;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 img {
@@ -45,6 +46,22 @@ img {
 
 .visually-hidden {
   display: none;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.button-light {
+  background-color: #82b3d3;
 }
 
 /* Pages */
@@ -70,18 +87,14 @@ img {
 
 /* Advantages */
 
-.advantages {
-  text-align: center;
-}
-
-.main-title {
+.title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.main-subtitle {
+.subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -117,4 +130,122 @@ img {
 
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Services */
+
+.services-item {
+  background-color: #fff;
+}
+
+.services-item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Subscribe */
+
+.subscribe {
+  color: #fff;
+  background-color: #000;
+  background-size: 100% auto;
+  background-image: url("../images/backgrounds/subscribe.jpg");
+  background-repeat: no-repeat;
+}
+
+/* Footer */
+
+.contacts-address {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.footer-number-call {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Catalog page */
+
+.main-inner-wrapper {
+  background-color: #000;
+  color: #fff;
+  background-size: 100% auto;
+  background-image: url("../images/backgrounds/filter.jpg");
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+/* Filter */
+
+.filter {
+  text-align: left;
+}
+
+.housing-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-reset {
+  background-color: transparent;
+}
+
+/* Catalog */
+
+.catalog {
+  text-align: left;
+  font-weight: 400;
+}
+
+.catalog-search-result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.housing-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.housing-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.housing-number-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #82b3d3;
+}
+
+.pagination-current {
+  color: #000;
+  background-color: #f2f2f2;
 }
