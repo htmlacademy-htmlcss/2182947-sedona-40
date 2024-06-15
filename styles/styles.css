@@ -30,14 +30,24 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000;
+  text-align: center;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
 img {
@@ -49,6 +59,11 @@ img {
 }
 
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 36px;
   border-radius: 4px;
   background-color: #756157;
   font-weight: 700;
@@ -66,6 +81,32 @@ img {
 
 /* Pages */
 
+.page-header {
+  width: 1060px;
+  margin: 0 auto -6px auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-list:last-child {
+  margin-left: auto;
+}
+
 .navigation-item {
   font-weight: 700;
   font-size: 20px;
@@ -75,14 +116,68 @@ img {
   text-decoration: none;
 }
 
+.navigation-item-search {
+  display: block;
+  background-image: url("../images/icons/search.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-item-heart {
+  display: block;
+  background-image: url("../images/icons/heart.svg");
+  width: 18px;
+  height: 17px;
+}
+
+.navigation-item-favorite {
+  position: relative;
+}
+
+.item-count {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10px;
+  color: #fff;
+  line-height: 10px;
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
+.navigation-item-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 /* Hero */
 
 .hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 485px;
   color: #fff;
   background-color: #000;
   background-size: 100% auto;
   background-image: url("../images/backgrounds/index-background.jpg");
   background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 57px;
+  width: 100%;
+  background-image: url("../images/divider.png");
 }
 
 /* Advantages */
