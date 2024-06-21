@@ -327,6 +327,10 @@ ul {
 
 /* Services */
 
+.services {
+  margin-bottom: 96px;
+}
+
 .services-list {
   display: flex;
   margin: 0;
@@ -410,6 +414,7 @@ ul {
   line-height: 120%;
   text-transform: uppercase;
   color: #000;
+  margin-bottom: 20px;
 }
 
 .search-subtitle {
@@ -418,6 +423,11 @@ ul {
   font-size: 22px;
   line-height: 118%;
   color: #333;
+  margin-bottom: 54px;
+}
+
+.search-button {
+  margin-bottom: 96px;
 }
 
 /* Subscribe */
@@ -433,6 +443,7 @@ ul {
   background-size: 100% auto;
   background-image: url("../images/backgrounds/subscribe.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
 .subscribe-title {
@@ -441,6 +452,8 @@ ul {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .subscribe-subtitle {
@@ -449,6 +462,7 @@ ul {
   font-size: 22px;
   line-height: 25px;
   color: #fff;
+  margin-bottom: 54px;
 }
 
 .subscribe-email {
@@ -472,6 +486,35 @@ ul {
   margin: 0 70px;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.social-logo {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 13px 12px;
+}
+
+.social-vkontakte {
+  background-image: url("../images/icons/vk.svg");
+  width: 25px;
+  height: 15px;
+}
+
+.social-telegram {
+  background-image: url("../images/icons/telegram.svg");
+  width: 18px;
+  height: 16px;
+}
+
+.social-youtube {
+  background-image: url("../images/icons/youtube.svg");
+  width: 23px;
+  height: 18px;
 }
 
 .contacts-address {
