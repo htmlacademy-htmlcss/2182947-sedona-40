@@ -112,22 +112,26 @@
       </div>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Поиск гостиниц</h2>
-        <span class="catalog-search-result">Найдено гостиниц: <span class="catalog-search-output">38</span></span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешевое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <a href="catalog.html?view=tile" class="button button-light">
-          <span class="visually-hidden">Показать плитку</span>
-        </a>
-        <a href="catalog.html?view=card" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="catalog.html?view=list" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="catalog-head-wrapper">
+          <h2 class="visually-hidden">Поиск гостиниц</h2>
+          <span class="catalog-search-result">Найдено гостиниц: <span class="catalog-search-output">38</span></span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <div class="catalog-view-wrapper">
+            <a href="catalog.html?view=card" class="catalog-view-item catalog-card">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a href="catalog.html?view=tile" class="catalog-view-item catalog-tile">
+              <span class="visually-hidden">Показать плитку</span>
+            </a>
+            <a href="catalog.html?view=list" class="catalog-view-item catalog-list">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
+        </div>
         <ul class="housing-list">
           <li class="housing-card">
             <a class="housing-card-link">
@@ -163,7 +167,7 @@
             <section class="housing-card-buttons">
               <h3 class="visually-hidden">Информация и избранное</h3>
               <a href="#" class="button housing-more-details">Подробнее</a>
-              <button class="button button-light housing-to-favorite">В избранное</button>
+              <button class="button button-light housing-to-favorite">В избранном</button>
             </section>
             <section class="housing-card-rate">
               <h3 class="visually-hidden">Количество звезд</h3>
@@ -238,12 +242,12 @@
       </section>
 
       <section class="subscribe catalog-subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title catalog-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-subtitle catalog-subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="email-address" class="subscribe-email">Ваш e-mail</label>
-          <input type="email" id="email-address" name="email-address" required>
-          <button class="button button-light" type="submit">Подписаться</button>
+          <input type="email" id="email-address" name="email-address" required class="subscribe-form-email">
+          <button class="button button-light subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
