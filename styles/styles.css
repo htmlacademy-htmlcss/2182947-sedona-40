@@ -60,7 +60,14 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -108,7 +115,6 @@ ul {
 .navigation-list {
   display: flex;
   align-items: center;
-  column-gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -117,7 +123,7 @@ ul {
   margin-left: auto;
 }
 
-.navigation-item {
+.navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -125,20 +131,33 @@ ul {
   color: inherit;
   line-height: 24px;
   text-decoration: none;
+  padding: 20px 16px;
+}
+
+.navigation-user {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
 }
 
 .navigation-item-search {
   display: block;
   background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 20px;
   height: 20px;
+  padding: 22px 12px;
 }
 
 .navigation-item-heart {
   display: block;
   background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 18px;
   height: 17px;
+  padding: 22px 12px;
 }
 
 .navigation-item-favorite {
@@ -147,8 +166,8 @@ ul {
 
 .item-count {
   position: absolute;
-  top: -12px;
-  right: -10px;
+  top: 12px;
+  right: 0;
   width: 20px;
   height: 20px;
   display: flex;
@@ -165,6 +184,9 @@ ul {
 .navigation-item-button {
   font-size: 16px;
   line-height: 20px;
+  margin-left: 20px;
+  padding: 8px 0 8px 0;
+  width: 160px;
 }
 
 /* Hero */
@@ -204,6 +226,8 @@ ul {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .subtitle {
@@ -212,12 +236,13 @@ ul {
   font-size: 22px;
   line-height: 26px;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 .light {
@@ -228,13 +253,42 @@ ul {
   padding: 69px 0;
 }
 
+.main-title {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.main-subtitle {
+  display: block;
+  margin-bottom: 90px;
+}
+
 .advantages-title {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #fff;
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.advantages-item:not(:first-child):not(:last-child) .advantages-title::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-description {
@@ -243,6 +297,8 @@ ul {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item:not(:first-child):not(:last-child) .advantages-title {
@@ -256,13 +312,14 @@ ul {
 .advantages-item {
   width: 400px;
   background-color: #82b3d3;
+  padding: 102px 85px;
 }
 
-.advantages-item:nth-child(3n) {
+.advantages-item:nth-child(4n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:nth-child(2n) {
+.advantages-item:nth-child(odd):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -457,6 +514,8 @@ ul {
   font-size: 60px;
   line-height: 130%;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
