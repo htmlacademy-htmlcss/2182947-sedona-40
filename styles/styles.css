@@ -596,14 +596,30 @@ ul {
 
 /* Main catalog */
 
+.main-inner-wrapper {
+  padding: 35px 70px 70px 70px;
+}
+
 .inner-header-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 130%;
   color: #fff;
-  margin: 0;
+  margin: 0 0 8px 0;
   padding: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -612,6 +628,17 @@ ul {
   font-size: 16px;
   line-height: 131%;
   color: #fff;
+}
+
+.breadcrumbs-link-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.breadcrumbs-arrow {
+  background-image: url("../images/icons/arrow.svg");
+  width: 8px;
+  height: 11px;
 }
 
 .catalog {
@@ -638,6 +665,42 @@ ul {
 }
 
 /* Catalog hotels result */
+
+.housing-filter-group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.housing-filter-infrastructure {
+  margin-right: 70px;
+}
+
+.housing-filter-type {
+  margin-right: 140px;
+}
+
+.housing-filter-title {
+  margin: 0 0 32px 0;
+  padding: 0;
+}
+
+.housing-filter {
+  display: flex;
+}
+
+.housing-filer-list {
+  padding: 0;
+  margin: 0;
+}
+
+.housing-filer-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control-input {
+  margin: 0 16px 0 0;
+}
 
 .housing-card {
   border: 1px solid #e6e6e6;
