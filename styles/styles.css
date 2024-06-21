@@ -206,6 +206,7 @@ ul {
   background-size: 100% auto;
   background-image: url("../images/backgrounds/index-background.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 69px;
 }
 
 .hero::after {
@@ -249,10 +250,6 @@ ul {
   color: #fff;
 }
 
-.advantages {
-  padding: 69px 0;
-}
-
 .main-title {
   display: block;
   margin-bottom: 25px;
@@ -261,6 +258,10 @@ ul {
 .main-subtitle {
   display: block;
   margin-bottom: 90px;
+}
+
+.advantages {
+  margin-bottom: 64px;
 }
 
 .advantages-title {
@@ -313,6 +314,7 @@ ul {
   width: 400px;
   background-color: #82b3d3;
   padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .advantages-item:nth-child(4n) {
@@ -337,23 +339,66 @@ ul {
 }
 
 .services-title {
+  margin-bottom: 20px;
+}
+
+.services-subtitle {
+  margin-bottom: 64px;
+}
+
+.services-picture {
+  margin: 0 auto 30px auto;
+}
+
+.services-picture-home {
+  background-image: url("../images/advantages/advantages-home.svg");
+  width: 76px;
+  height: 72px;
+}
+
+.services-picture-food {
+  background-image: url("../images/advantages/advantages-food.svg");
+  width: 75px;
+  height: 70px;
+}
+
+.services-picture-gifts {
+  background-image: url("../images/advantages/advantages-gifts.svg");
+  width: 65px;
+  height: 76px;
+}
+
+.services-heading {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
   text-transform: uppercase;
+  margin: 0 0 30px 0;
+  padding: 0;
 }
 
-.services-subtitle {
+.services-text {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  padding: 81px 85px;
 }
 
 .services-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-house::after {
+  background-image: url("../images/advantages/advantages-home.svg");
 }
 
 /* Search */
