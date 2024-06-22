@@ -314,7 +314,7 @@ ul {
 }
 
 .advantages-item {
-  width: 400px;
+  max-width: 400px;
   background-color: #82b3d3;
   padding: 102px 85px;
   box-sizing: border-box;
