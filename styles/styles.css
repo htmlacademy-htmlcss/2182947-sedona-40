@@ -114,6 +114,7 @@ ul {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -136,6 +137,7 @@ ul {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 0 0 auto;
 }
@@ -169,7 +171,7 @@ ul {
   top: 12px;
   right: 0;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,7 +202,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 485px;
+  min-height: 485px;
   color: #fff;
   background-color: #000;
   background-size: 100% auto;
@@ -242,6 +244,9 @@ ul {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 385px 385px 385px;
   margin: 0;
   padding: 0;
 }
@@ -323,6 +328,14 @@ ul {
 
 .advantages-item:nth-child(odd):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-image {
+  grid-column: 2 / -1;
+}
+
+.advantages-image-bridge {
+  grid-column: 1 / 3;
 }
 
 /* Services */
@@ -437,7 +450,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 415px;
+  min-height: 415px;
   color: #fff;
   background-color: #000;
   background-size: 100% auto;
@@ -493,7 +506,7 @@ ul {
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   border: none;
-  height: 52px;
+  min-height: 52px;
   box-sizing: border-box;
   width: 452px;
   background: #f2f2f2;
@@ -715,7 +728,7 @@ ul {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 292px;
-  height: 49px;
+  min-height: 49px;
   margin-right: 70px;
 }
 
@@ -865,7 +878,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
 }
 
 .housing-to-favorite {
@@ -882,7 +895,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
 }
 
 .housing-added-favorite {
@@ -902,7 +915,7 @@ ul {
   background-color: #f2f2f2;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
 }
 
 /* Catalog subscribe */
@@ -947,7 +960,7 @@ ul {
   padding: 12px 24px;
   border-radius: 4px;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
