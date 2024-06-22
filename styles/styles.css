@@ -243,8 +243,8 @@ ul {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 385px 385px 385px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
 }
