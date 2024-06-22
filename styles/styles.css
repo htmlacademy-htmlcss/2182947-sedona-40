@@ -845,7 +845,40 @@ ul {
 
 .housing-card-rate {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.housing-stars-amara {
+  display: inline-block;
+  height: 17px;
+  width: 72px;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+}
+
+.housing-stars-poco {
+  display: inline-block;
+  height: 17px;
+  width: 72px;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+}
+
+.housing-stars-quail {
+  display: inline-block;
+  height: 17px;
+  width: 54px;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+}
+
+.housing-stars-greentree {
+  display: inline-block;
+  height: 17px;
+  width: 36px;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
 }
 
 .housing-name {
@@ -916,6 +949,11 @@ ul {
   border-radius: 4px;
   width: 140px;
   min-height: 37px;
+}
+
+.housing-rate {
+  display: block;
+  margin-left: 5px;
 }
 
 /* Catalog subscribe */
