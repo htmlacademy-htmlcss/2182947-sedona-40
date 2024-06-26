@@ -135,6 +135,22 @@ ul {
   padding: 20px 16px;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #756257;
+  height: 2px;
+  z-index: 2;
+}
+
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -535,22 +551,20 @@ ul {
   padding: 13px 12px;
 }
 
-.social-vkontakte {
-  background-image: url("../images/icons/vk.svg");
-  width: 25px;
-  height: 15px;
+.social-icon {
+  fill: #83b3d3;
 }
 
-.social-telegram {
-  background-image: url("../images/icons/telegram.svg");
-  width: 18px;
-  height: 16px;
+.social-logo:hover .social-icon {
+  fill: #68a2ca;
 }
 
-.social-youtube {
-  background-image: url("../images/icons/youtube.svg");
-  width: 23px;
-  height: 18px;
+.social-logo:focus .social-icon {
+  fill: #68a2ca;
+}
+
+.social-logo:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-address {
@@ -570,6 +584,34 @@ ul {
   text-decoration: none;
 }
 
+.footer-number-call:hover {
+  color: #756157;
+}
+
+.footer-number-call:focus {
+  color: #756157;
+}
+
+.footer-number-call:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.html-academy-logo {
+  fill: #000;
+}
+
+.htmlacademy-link:hover .html-academy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus .html-academy-logo {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .html-academy-logo {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 /* Catalog page */
 
 .main-inner-wrapper {
@@ -583,6 +625,19 @@ ul {
 
 .breadcrumbs-link {
   color: inherit;
+  cursor: pointer;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #fff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Filter */
@@ -697,15 +752,26 @@ ul {
 }
 
 .catalog-view-item {
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
   border-radius: 4px;
-  padding: 14px 12px;
   border: 2px solid #000;
 }
 
 .catalog-view-item:not(:first-child) {
   border: 2px solid #e5e5e5;
+}
+
+.catalog-view-item:hover {
+  border: 2px solid #68a2ca;
+}
+
+.catalog-view-item:active {
+  border: 2px solid #000;
 }
 
 .catalog-search-result {
@@ -729,27 +795,11 @@ ul {
   width: 292px;
   min-height: 49px;
   margin-right: 70px;
+  cursor: pointer;
 }
 
-.catalog-card {
-  display: block;
-  background-image: url("../images/search/card-view.svg");
-  width: 16px;
-  height: 14px;
-}
-
-.catalog-tile {
-  display: block;
-  background-image: url("../images/search/tile-view.svg");
-  width: 16px;
-  height: 14px;
-}
-
-.catalog-list {
-  display: block;
-  background-image: url("../images/search/list-view.svg");
-  width: 16px;
-  height: 14px;
+.select-control:hover {
+  border: 2px solid #68a2ca;
 }
 
 /* Catalog hotels result */
@@ -925,6 +975,18 @@ ul {
   min-height: 36px;
 }
 
+.housing-more-details:hover {
+  background-color: #615048;
+}
+
+.housing-more-details:focus {
+  background-color: #615048;
+}
+
+.housing-more-details:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .housing-to-favorite {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -940,10 +1002,32 @@ ul {
   align-items: center;
   width: 140px;
   min-height: 36px;
+  cursor: pointer;
+}
+
+.housing-to-favorite:hover {
+  background-color: #68a2ca;
+}
+
+.housing-to-favorite:focus {
+  background-color: #68a2ca;
+}
+
+.housing-to-favorite:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .housing-added-favorite {
+  cursor: pointer;
   background-color: #7db54f;
+}
+
+.housing-added-favorite:hover {
+  background-color: #6c9e42;
+}
+
+.housing-added-favorite:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .housing-number-rate {
@@ -1015,6 +1099,19 @@ ul {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
