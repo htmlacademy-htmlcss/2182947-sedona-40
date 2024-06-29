@@ -66,48 +66,67 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="housing-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="housing-filter-group housing-filter-infrastructure">
-              <legend class="housing-filter-title">Инфраструктура:</legend>
-              <ul class="housing-filer-list">
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>Бассейн
-                  </label>
-                </li>
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                  </label>
-                </li>
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="housing-filter-group housing-filter-type">
-              <legend class="housing-filter-title">Тип жилья:</legend>
-              <ul class="housing-filer-list">
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type" checked>Гостиница
-                  </label>
-                </li>
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type">Мотель
-                  </label>
-                </li>
-                <li class="housing-filer-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="housing-type">Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button button-light catalog-submit" type="submit">Применить</button>
-            <button class="button button-reset catalog-reset" type="reset">Сбросить</button>
+            <div class="filter-house-type">
+              <fieldset class="housing-filter-group">
+                <legend class="housing-filter-title">Инфраструктура:</legend>
+                <ul class="housing-filer-list">
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="housing-filter-group">
+                <legend class="housing-filter-title">Тип жилья:</legend>
+                <ul class="housing-filer-list">
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type" checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type">Мотель
+                    </label>
+                  </li>
+                  <li class="housing-filer-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="housing-type">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter-house-price">
+              <fieldset class="housing-filter-group">
+                <legend class="housing-filter-title">Стоимость, &#8381;:</legend>
+                <div class="house-price-wrapper">
+                  <div class="price-range-wrapper">
+                    <label for="start-price" class="house-price-range">от</label>
+                    <input id="start-price" type="number" name="min-price" value="0" required class="house-price-toggle">
+                  </div>
+                  <div class="price-range-wrapper">
+                    <label for="final-price" class="house-price-range">до</label>
+                    <input id="final-price" type="number" name="max-price" value="9000" required class="house-price-toggle">
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="filter-button">
+              <button class="button button-light catalog-submit" type="submit">Применить</button>
+              <button class="button button-reset catalog-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -263,8 +282,8 @@
         <h2 class="subscribe-title catalog-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-subtitle catalog-subscribe-subtitle">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="email-address" class="subscribe-email">Ваш e-mail</label>
           <input type="email" id="email-address" name="email-address" required class="subscribe-form-email">
+          <label for="email-address" class="subscribe-email">Ваш e-mail</label>
           <button class="button button-light subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
