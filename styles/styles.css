@@ -124,6 +124,10 @@ ul {
   margin-left: auto;
 }
 
+.navigation-item {
+  display: flex;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -732,6 +736,8 @@ ul {
   line-height: 125%;
   text-transform: uppercase;
   color: #fff;
+  margin-top: 56px;
+  margin-bottom: 32px;
 }
 
 .catalog-reset {
@@ -874,11 +880,47 @@ ul {
 
 .filter-house-type {
   display: flex;
+  column-gap: 70px;
   margin-right: auto;
 }
 
 .filter-house-price {
-  margin-right: 70px;
+  display: flex;
+  column-gap: 70px;
+}
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .filter-button {
@@ -893,6 +935,7 @@ ul {
 .house-price-wrapper {
   display: flex;
   column-gap: 2px;
+  margin-bottom: 48px;
 }
 
 .house-price-toggle {
@@ -978,8 +1021,54 @@ ul {
   margin-bottom: 16px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
 .control-input {
   margin: 0 16px 0 0;
+}
+
+.control-mark-tick {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark .control-mark-tick {
+  display: block;
+}
+
+/* Radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
 }
 
 .housing-card {
