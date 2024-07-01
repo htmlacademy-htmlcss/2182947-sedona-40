@@ -763,6 +763,10 @@ ul {
   cursor: pointer;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 /* Catalog page */
 
 .main-inner-wrapper {
