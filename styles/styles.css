@@ -731,12 +731,39 @@ ul {
   line-height: 120%;
   text-transform: uppercase;
   color: #000;
+  padding: 0;
+  margin: 0 0 64px 0;
+  text-align: left;
 }
 
 .search-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: 48px;
+}
+
+.search-form-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guests-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.guests-wrapper .search-form-title {
+  margin-right: 46px;
+}
+
+.guests-amount-wrapper {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .search-form-title {
@@ -748,7 +775,16 @@ ul {
   color: #000;
 }
 
+.title-check-in {
+  margin-right: 24px;
+}
+
+.title-check-out {
+  margin-right: 18px;
+}
+
 .search-form-button {
+  align-self: stretch;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -761,6 +797,92 @@ ul {
   border: none;
   background: #83b3d3;
   cursor: pointer;
+}
+
+.search-form-input {
+  flex-grow: 1;
+  border: none;
+  min-height: 48px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background: #f2f2f2;
+}
+
+.search-form-date {
+  position: absolute;
+  left: 157px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000;
+}
+
+.search-form-input:focus + .search-form-date {
+  opacity: 0;
+}
+
+.search-form-input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.search-form-input[type="date"] {
+  -moz-appearance: textfield;
+  position: relative;
+}
+
+.search-form-calendar {
+  position: absolute;
+  right: 22px;
+  fill: #000;
+}
+
+.search-form-text {
+  position: absolute;
+  left: 157px;
+  top: 47px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #333;
+}
+
+.search-form-text.error {
+  color: #ff5757;
+}
+
+.input-guests {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 111%;
+  text-align: center;
+  color: #000;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 14px 10px;
+  width: 31px;
+  box-sizing: border-box;
+}
+
+.guests-amount-button {
+  padding: 14px 10px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-form-amount {
+  position: absolute;
+  left: 50px;
+  bottom: 12px;
+}
+
+.button-change-amount {
+  margin: auto;
 }
 
 .modal-container-close {
