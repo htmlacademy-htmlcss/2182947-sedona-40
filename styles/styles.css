@@ -293,7 +293,7 @@ ul {
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 385px 385px 385px;
+  grid-template-rows: minmax(385px, auto) minmax(385px, auto) minmax(385px, auto);
   margin: 0;
   padding: 0;
 }
@@ -1053,6 +1053,20 @@ ul {
   margin-bottom: 32px;
 }
 
+.catalog-submit:hover,
+.catalog-submit:focus {
+  background-color: #68a2ca;
+}
+
+.catalog-submit:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-submit:disabled {
+  background-color: #e5e5e5;
+}
+
 .catalog-reset {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1061,6 +1075,24 @@ ul {
   text-transform: uppercase;
   background-color: transparent;
   color: #fff;
+}
+
+.catalog-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-reset:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.catalog-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.catalog-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main catalog */
