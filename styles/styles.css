@@ -725,6 +725,16 @@ ul {
   cursor: pointer;
 }
 
+.modal-close-button:hover,
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active .modal-close {
+  fill: #000;
+  opacity: 0.3;
+}
+
 .modal-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1016,6 +1026,22 @@ ul {
   color: #fff;
 }
 
+.control:hover .control-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-submit {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1212,6 +1238,15 @@ ul {
   border: none;
 }
 
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
 .toggle-min {
   top: -8px;
   left: 0;
@@ -1257,6 +1292,9 @@ input[type=number] {
   padding: 12px 20px;
   width: 143px;
   box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .house-price-range {
@@ -1272,9 +1310,8 @@ input[type=number] {
   opacity: 0.6;
 }
 
-.house-price-toggle {
-  border: none;
-  background-color: #f2f2f2;
+.house-price-toggle:hover {
+  background-color: #e6e6e6;
 }
 
 .price-range-wrapper:first-child .house-price-toggle {
