@@ -774,6 +774,10 @@ ul {
   background-color: #e6e6e6;
 }
 
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .modal-close-button:active .modal-close {
   fill: #000;
   opacity: 0.3;
@@ -878,6 +882,11 @@ ul {
 }
 
 .search-form-input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000;
   flex-grow: 1;
   border: none;
   min-height: 48px;
@@ -885,14 +894,15 @@ ul {
   border-radius: 4px;
   padding: 12px 20px;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
-.search-form-input {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 133%;
-  color: #000;
+.search-form-input:hover {
+  background-color: #e6e6e6;
+}
+
+.search-form-input:focus {
+  outline: 3px solid #83b3d3;
 }
 
 .search-form-input:focus + .search-form-date {
@@ -951,6 +961,33 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.guests-amount-button:hover .button-decrease-amount,
+.guests-amount-button:hover .button-increase-amount {
+  background-color: #000;
+}
+
+.button-decrease-amount {
+  display: block;
+  mask-image: url("../images/icons/minus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: rgba(117, 97, 87, 0.3);
+  width: 14px;
+  height: 2px;
+  margin: auto;
+}
+
+.button-increase-amount {
+  display: block;
+  mask-image: url("../images/icons/plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: rgba(117, 97, 87, 0.3);
+  width: 14px;
+  height: 14px;
+  margin: auto;
 }
 
 .search-form-amount {
@@ -1589,36 +1626,26 @@ input[type=number] {
   justify-content: space-between;
 }
 
-.housing-stars-amara {
+.housing-stars {
   display: inline-block;
   height: 17px;
-  width: 72px;
   background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
+}
+
+.housing-stars-amara {
+  width: 96px;
 }
 
 .housing-stars-poco {
-  display: inline-block;
-  height: 17px;
-  width: 72px;
-  background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
+  width: 96px;
 }
 
 .housing-stars-quail {
-  display: inline-block;
-  height: 17px;
-  width: 54px;
-  background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
+  width: 72px;
 }
 
 .housing-stars-greentree {
-  display: inline-block;
-  height: 17px;
-  width: 36px;
-  background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
+  width: 48px;
 }
 
 .housing-name {
