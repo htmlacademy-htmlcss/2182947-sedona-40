@@ -99,7 +99,7 @@ ul {
 /* Pages */
 
 .page-header {
-  margin: 0 70px -6px 70px;
+  margin: 0 70px;
 }
 
 .navigation {
@@ -109,7 +109,8 @@ ul {
 .logo {
   position: relative;
   z-index: 1;
-  margin-right: 30px;
+  margin-right: 29px;
+  margin-bottom: -6px;
 }
 
 .navigation-list {
@@ -158,7 +159,7 @@ ul {
 .navigation-link-current::after {
   content: "";
   position: absolute;
-  bottom: -17px;
+  bottom: -20px;
   width: 100%;
   left: 0;
   right: 0;
@@ -200,8 +201,8 @@ ul {
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #000;
-  width: 18px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   padding: 22px 12px;
 }
 
@@ -221,7 +222,7 @@ ul {
 .item-count {
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 4px;
   width: 20px;
   min-height: 20px;
   display: flex;
@@ -413,7 +414,7 @@ ul {
 /* Services */
 
 .services {
-  margin-bottom: 92px;
+  margin-bottom: 96px;
 }
 
 .services-list {
@@ -436,25 +437,21 @@ ul {
 }
 
 .services-picture {
+  width: 75px;
+  height: 72px;
   margin: 0 auto 30px auto;
 }
 
 .services-picture-home {
   background-image: url("../images/advantages/advantages-home.svg");
-  width: 76px;
-  height: 72px;
 }
 
 .services-picture-food {
   background-image: url("../images/advantages/advantages-food.svg");
-  width: 75px;
-  height: 70px;
 }
 
 .services-picture-gifts {
   background-image: url("../images/advantages/advantages-gifts.svg");
-  width: 65px;
-  height: 76px;
 }
 
 .services-heading {
@@ -541,7 +538,6 @@ ul {
   background-size: 100% auto;
   background-image: url("../images/backgrounds/subscribe.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 40px;
 }
 
 .subscribe-form {
@@ -565,7 +561,7 @@ ul {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 25px;
+  line-height: 118%;
   color: #fff;
   margin-bottom: 54px;
 }
@@ -629,7 +625,9 @@ ul {
 
 .page-footer {
   display: flex;
-  padding: 0 70px 30px 70px;
+  padding: 40px 70px 30px 70px;
+  min-height: 120px;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
 }
@@ -638,7 +636,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 28px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-logo {
@@ -646,24 +645,20 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #83B3D3;
+  width: 47px;
+  height: 40px;
 }
 
 .social-logo.vk {
   mask-image: url("../images/icons/vk.svg");
-  width: 25px;
-  height: 15px;
 }
 
 .social-logo.telegram {
   mask-image: url("../images/icons/telegram.svg");
-  width: 18px;
-  height: 16px;
 }
 
 .social-logo.youtube {
   mask-image: url("../images/icons/youtube.svg");
-  width: 23px;
-  height: 18px;
 }
 
 .social-logo:hover,
@@ -1405,7 +1400,7 @@ ul {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: 0;
 }
 
 .filter-button {
@@ -1431,7 +1426,7 @@ input[type=number] {
 .house-price-wrapper {
   display: flex;
   column-gap: 2px;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
 }
 
 .house-price-toggle {
@@ -1796,7 +1791,7 @@ input[type=number] {
   text-transform: uppercase;
   color: #fff;
   background-color: #82b3d3;
-  padding: 12px 24px;
+  padding: 12px 10px;
   border-radius: 4px;
   width: 60px;
   min-height: 60px;
