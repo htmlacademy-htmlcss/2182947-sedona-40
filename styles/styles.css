@@ -55,10 +55,6 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-img {
-  display: block;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -111,6 +107,10 @@ ul {
   z-index: 1;
   margin-right: 29px;
   margin-bottom: -6px;
+}
+
+.site-logo {
+  display: block;
 }
 
 .navigation-list {
@@ -272,6 +272,7 @@ ul {
   color: #fff;
   background-color: #000;
   background-image: url("../images/backgrounds/index-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 69px;
 }
@@ -283,9 +284,11 @@ ul {
   height: 57px;
   width: 100%;
   background-image: url("../images/divider.svg");
+  background-size: cover;
 }
 
 .hero-logo {
+  display: block;
   margin-top: -30px;
 }
 
@@ -401,6 +404,10 @@ ul {
 
 .advantages-item:nth-child(odd):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-photo {
+  display: block;
 }
 
 .advantages-image {
@@ -537,6 +544,7 @@ ul {
   background-color: #000;
   background-size: 100% auto;
   background-image: url("../images/backgrounds/subscribe.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1068,8 +1076,8 @@ ul {
 .main-inner-wrapper {
   background-color: #000;
   color: #fff;
-  background-size: 100% auto;
   background-image: url("../images/backgrounds/filter.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
 }
@@ -1211,8 +1219,22 @@ ul {
   padding: 0;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
 .breadcrumbs-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:last-child).breadcrumbs-item::after {
+  content: "";
+  display: block;
+  margin-left: 10px;
+  background-image: url("../images/icons/arrow.svg");
+  height: 21px;
+  width: 8px;
 }
 
 .breadcrumbs-link {
@@ -1224,15 +1246,9 @@ ul {
 }
 
 .breadcrumbs-link-icon {
+  display: block;
   width: 13px;
   height: 13px;
-}
-
-.breadcrumbs-arrow {
-  background-image: url("../images/icons/arrow.svg");
-  background-repeat: no-repeat;
-  width: 8px;
-  height: 11px;
 }
 
 .catalog {
@@ -1594,6 +1610,7 @@ input[type=number] {
 }
 
 .housing-card-image {
+  display: block;
   margin-bottom: 16px;
   object-fit: contain;
 }
