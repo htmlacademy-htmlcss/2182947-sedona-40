@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -40,7 +42,7 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 117%;
   color: #000;
   text-align: center;
 }
@@ -76,7 +78,7 @@ body {
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 180%;
   text-transform: uppercase;
   color: #fff;
   border: none;
@@ -92,7 +94,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 120%;
   text-transform: uppercase;
   color: #000;
   margin: 0;
@@ -103,7 +105,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 118%;
   color: #333;
   margin: 0;
   padding: 0;
@@ -153,7 +155,7 @@ body {
   font-size: 20px;
   text-transform: capitalize;
   color: inherit;
-  line-height: 24px;
+  line-height: 120%;
   text-decoration: none;
   padding: 20px 16px;
 }
@@ -247,14 +249,14 @@ body {
   font-weight: 400;
   font-size: 10px;
   color: #fff;
-  line-height: 10px;
+  line-height: 100%;
   background-color: #7db54f;
   border-radius: 10px;
 }
 
 .navigation-item-button {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   margin-left: 20px;
   padding: 8px 0 8px 0;
   width: 160px;
@@ -339,7 +341,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 117%;
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 60px 0;
@@ -377,7 +379,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 117%;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -426,6 +428,9 @@ body {
 }
 
 .services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   background-color: #fff;
 }
@@ -438,26 +443,37 @@ body {
   margin-bottom: 64px;
 }
 
-.services-picture {
+.services-home::before {
+  content: "";
+  display: block;
   width: 75px;
   height: 72px;
-  margin: 0 auto 30px auto;
-}
-
-.services-picture-home {
+  margin-bottom: 30px;
   background-image: url("../images/advantages/advantages-home.svg");
 }
 
-.services-picture-food {
+.services-food::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
   background-image: url("../images/advantages/advantages-food.svg");
 }
 
-.services-picture-gifts {
+.services-gifts::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
   background-image: url("../images/advantages/advantages-gifts.svg");
 }
 
 .services-heading {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -520,6 +536,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.search-button:disabled {
+  background-color: #e5e5e5;
+}
+
 /* Subscribe section */
 
 .subscribe {
@@ -547,7 +567,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 120%;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
@@ -569,7 +589,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 133%;
   color: #000;
   opacity: 0.6;
 }
@@ -601,6 +621,10 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.subscribe-form-email:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .subscribe-button {
   border-radius: 0 4px 4px 0;
 }
@@ -613,6 +637,10 @@ body {
 
 .subscribe-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /* Footer */
@@ -668,7 +696,7 @@ body {
 .contacts-address {
   font-weight: 400;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 100%;
   text-transform: uppercase;
   font-style: normal;
 }
@@ -740,7 +768,6 @@ body {
 
 .modal-close {
   fill: #000;
-  margin-top: 5px;
 }
 
 .modal-close-button {
@@ -769,6 +796,10 @@ body {
 .modal-close-button:active .modal-close {
   fill: #000;
   opacity: 0.3;
+}
+
+.modal-close-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .modal-title {
@@ -869,6 +900,10 @@ body {
   background-color: #68a2ca;
 }
 
+.search-form-button:disabled {
+  background-color: #e5e5e5;
+}
+
 .search-form-input {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -880,17 +915,19 @@ body {
   min-height: 48px;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   background: #f2f2f2;
   cursor: pointer;
 }
 
 .search-form-input:hover {
   background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-form-input:focus {
   outline: 3px solid #83b3d3;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-form-input:focus + .search-form-date {
@@ -901,12 +938,25 @@ body {
   opacity: 0;
 }
 
+.search-form-input:disabled {
+  background-color: #e5e5e5;
+}
+
 .search-form-calendar {
   position: absolute;
   right: 22px;
   fill: #000;
   opacity: 0.3;
   cursor: pointer;
+}
+
+.search-form-calendar:hover,
+.search-form-calendar:focus {
+  opacity: 1;
+}
+
+.search-form-calendar:active {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .search-form-text {
@@ -1013,6 +1063,10 @@ body {
 .guests-amount-button:active .button-decrease-amount,
 .guests-amount-button:active .button-increase-amount {
   outline: none;
+}
+
+.guests-amount-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .search-form-amount {
@@ -1132,7 +1186,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -1162,6 +1216,14 @@ body {
 
 .control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled ~ .control-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-submit {
@@ -1330,7 +1392,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 120%;
   text-transform: uppercase;
   color: #000;
   margin-right: auto;
@@ -1439,6 +1501,10 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
+.range-toggle:disabled {
+  background-color: #a4a4a4;
+}
+
 .toggle-min {
   top: -8px;
   left: 0;
@@ -1471,7 +1537,7 @@ input[type=number] {
 .house-price-wrapper {
   display: flex;
   column-gap: 2px;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .house-price-toggle {
@@ -1507,6 +1573,10 @@ input[type=number] {
 
 .house-price-toggle:focus {
   outline: 3px solid #83b3d3;
+}
+
+.house-price-toggle:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .price-range-wrapper:first-child .house-price-toggle {
@@ -1656,7 +1726,7 @@ input[type=number] {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 117%;
   color: #000;
   margin: 0;
   padding: 0;
@@ -1844,7 +1914,7 @@ input[type=number] {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 180%;
   text-transform: uppercase;
   color: #fff;
   background-color: #82b3d3;
