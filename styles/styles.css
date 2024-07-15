@@ -621,6 +621,10 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.subscribe-form-email:active {
+  outline: 1px solid #83b3d3;
+}
+
 .subscribe-form-email:disabled {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -986,6 +990,17 @@ body {
   padding: 14px 10px;
   width: 31px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.input-guests:hover,
+.input-guests:focus {
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-guests:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .guests-amount-button {
