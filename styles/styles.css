@@ -1521,7 +1521,8 @@ input[type=number] {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 17px;
   margin: 0 0 80px 0;
   padding: 0;
   list-style-type: none;
@@ -1600,8 +1601,8 @@ input[type=number] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
