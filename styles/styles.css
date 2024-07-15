@@ -263,6 +263,7 @@ body {
 .navigation-item-button:hover,
 .navigation-item-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .navigation-item-button:active {
@@ -512,6 +513,7 @@ body {
 .search-button:hover,
 .search-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .search-button:active {
@@ -606,6 +608,7 @@ body {
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .subscribe-button:active {
@@ -682,6 +685,7 @@ body {
 .footer-number-call:hover,
 .footer-number-call:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-number-call:active {
@@ -1148,7 +1152,7 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-mark:focus  {
+.control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
 }
 
@@ -1174,6 +1178,7 @@ body {
 .catalog-submit:hover,
 .catalog-submit:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .catalog-submit:active {
@@ -1616,10 +1621,22 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  margin-top: 16px;
 }
 
 .housing-card-link {
   text-decoration: none;
+}
+
+.housing-card-link:hover,
+.housing-card-link:focus {
+  outline: 2px solid #68a2ca;
+  border-radius: 5px;
+}
+
+.housing-card-link:active {
+  background-color: #e5e5e5;
+  outline: none;
 }
 
 .housing-card-price {
@@ -1640,7 +1657,7 @@ input[type=number] {
   font-size: 24px;
   line-height: 28px;
   color: #000;
-  margin: 0 0 16px 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -1715,6 +1732,7 @@ input[type=number] {
 .housing-more-details:hover,
 .housing-more-details:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .housing-more-details:active {
@@ -1742,6 +1760,7 @@ input[type=number] {
 .housing-to-favorite:hover,
 .housing-to-favorite:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .housing-to-favorite:active {
@@ -1753,12 +1772,18 @@ input[type=number] {
   background-color: #7db54f;
 }
 
-.housing-added-favorite:hover {
+.housing-added-favorite:hover,
+.housing-added-favorite:focus {
   background-color: #6c9e42;
 }
 
 .housing-added-favorite:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.housing-to-favorite:disabled,
+.housing-added-favorite:disabled {
+  background-color: #e5e5e5;
 }
 
 .housing-number-rate {
@@ -1843,11 +1868,12 @@ input[type=number] {
 
 .pagination-link:focus:not(.pagination-current) {
   background-color: #68a2ca;
-  border: none;
+  outline: none;
 }
 
 .pagination-item:nth-last-child(2) .pagination-link:focus:not(.pagination-current) {
   color: #fff;
+  outline: none;
 }
 
 .pagination-link:active:not(.pagination-current),
