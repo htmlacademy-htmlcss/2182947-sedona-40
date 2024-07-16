@@ -42,7 +42,7 @@ body {
   font-size: 18px;
   line-height: 117%;
   color: #000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -1435,6 +1435,10 @@ body {
   outline: 2px solid #68a2ca;
 }
 
+.select-control:active {
+  background-color: #e6e6e6;
+}
+
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
@@ -1578,6 +1582,11 @@ input[type=number] {
 
 .house-price-toggle:focus {
   outline: 3px solid #83b3d3;
+}
+
+.house-price-toggle:active {
+  background-color: #e6e6e6;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .house-price-toggle:disabled {
