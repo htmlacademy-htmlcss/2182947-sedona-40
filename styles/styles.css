@@ -643,7 +643,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 250px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
