@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гостиницы Седоны</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" sizes="32x32" href="favicon.ico">
 </head>
@@ -24,17 +23,17 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="navigation-link-current">Гостиницы</span></a>
+            <a class="navigation-link"><span class="navigation-link-current">Гостиницы</span></a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-item navigation-item-search navigation-icon" href="search.html">
+            <a class="navigation-link navigation-item-search navigation-icon" href="search.html">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item navigation-item-favorite">
-            <a class="navigation-item navigation-item-heart navigation-icon" href="favorite.html">
+            <a class="navigation-link navigation-item-heart navigation-icon" href="favorite.html">
               <span class="visually-hidden">Избранное</span>
               <span class="item-count">12</span>
             </a>
@@ -52,8 +51,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <img class="breadcrumbs-link-icon" width="13" height="13" src="images/icons/to-home-page.svg" alt="Иконка главной страницы">
+              <a class="breadcrumbs-link home-icon" href="index.html">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -137,11 +135,11 @@
                 <div class="house-price-wrapper">
                   <div class="price-range-wrapper">
                     <label for="min-price" class="house-price-range">от</label>
-                    <input id="min-price" type="number" name="min-price" value="0" required class="house-price-toggle">
+                    <input id="min-price" type="text" name="min-price" value="0" required class="house-price-toggle">
                   </div>
                   <div class="price-range-wrapper">
                     <label for="max-price" class="house-price-range">до</label>
-                    <input id="max-price" type="number" name="max-price" value="9000" required class="house-price-toggle">
+                    <input id="max-price" type="text" name="max-price" value="9000" required class="house-price-toggle">
                   </div>
                 </div>
                 <div class="range">
@@ -216,7 +214,7 @@
               <section class="housing-card-buttons">
                 <h3 class="visually-hidden">Информация и избранное</h3>
                 <a href="#" class="housing-more-details">Подробнее</a>
-                <button class="housing-to-favorite">В избранное</button>
+                <button class="housing-to-favorite" type="button">В избранное</button>
               </section>
               <section class="housing-card-rate">
                 <h3 class="visually-hidden">Количество звезд</h3>
@@ -239,7 +237,7 @@
               <section class="housing-card-buttons">
                 <h3 class="visually-hidden">Информация и избранное</h3>
                 <a href="#" class="housing-more-details">Подробнее</a>
-                <button class="housing-to-favorite housing-added-favorite">В избранном</button>
+                <button class="housing-to-favorite housing-added-favorite" type="button">В избранном</button>
               </section>
               <section class="housing-card-rate">
                 <h3 class="visually-hidden">Количество звезд</h3>
@@ -262,7 +260,7 @@
               <section class="housing-card-buttons">
                 <h3 class="visually-hidden">Информация и избранное</h3>
                 <a href="#" class="housing-more-details">Подробнее</a>
-                <button class="housing-to-favorite">В избранное</button>
+                <button class="housing-to-favorite" type="button">В избранное</button>
               </section>
               <section class="housing-card-rate">
                 <h3 class="visually-hidden">Количество звезд</h3>
@@ -285,7 +283,7 @@
               <section class="housing-card-buttons">
                 <h3 class="visually-hidden">Информация и избранное</h3>
                 <a href="#" class="housing-more-details">Подробнее</a>
-                <button class="housing-to-favorite">В избранное</button>
+                <button class="housing-to-favorite" type="button">В избранное</button>
               </section>
               <section class="housing-card-rate">
                 <h3 class="visually-hidden">Количество звезд</h3>
