@@ -175,6 +175,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: end;
   max-width: 400px;
   margin: 0 0 0 auto;
   list-style-type: none;
@@ -1388,9 +1389,7 @@ body {
 }
 
 .catalog-search-result {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 7px;
+  display: block;
   max-width: 340px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
